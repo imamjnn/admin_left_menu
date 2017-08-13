@@ -1,0 +1,10 @@
+media/*
+!media/.gitkeep
+theme/admin/static/node_modules
+application/cache/*
+!application/cache/.htaccess
+!application/cache/index.html
+protected/*
+!protected/.gitkeep
+!protected/.htaccess
+application/config/development
