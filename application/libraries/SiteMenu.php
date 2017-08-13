@@ -81,10 +81,12 @@ class SiteMenu
             array(
                 'label' => 'Home',
                 'perms' => 'read-admin_page',
-                'target'=> '/admin'
+                'target'=> '/admin',
+                'icon' => 'glyphicon glyphicon-home'
             ),
             array(
                 'label' => 'Post',
+                'icon' => 'glyphicon glyphicon-edit',
                 'submenu' => array(
                     array(
                         'label' => 'All Post',
@@ -121,30 +123,36 @@ class SiteMenu
             array(
                 'label' => 'Event',
                 'perms' => 'read-event',
-                'target'=> '/admin/event'
+                'target'=> '/admin/event',
+                'icon' => 'glyphicon glyphicon-calendar'
             ),
             array(
                 'label' => 'Banner',
                 'perms' => 'read-banner',
-                'target'=> '/admin/banner'
+                'target'=> '/admin/banner',
+                'icon' => 'glyphicon glyphicon-credit-card'
             ),
             array(
                 'label' => 'Gallery',
                 'perms' => 'read-gallery',
-                'target'=> '/admin/gallery'
+                'target'=> '/admin/gallery',
+                'icon' => 'glyphicon glyphicon-picture'
             ),
             array(
                 'label' => 'Page',
                 'perms' => 'read-page',
-                'target'=> '/admin/page'
+                'target'=> '/admin/page',
+                'icon' => 'glyphicon glyphicon-file'
             ),
             array(
                 'label' => 'User',
                 'perms' => 'read-user',
-                'target'=> '/admin/user'
+                'target'=> '/admin/user',
+                'icon' => 'glyphicon glyphicon-user'
             ),
             array(
                 'label' => 'Stat',
+                'icon' => 'glyphicon glyphicon-stats',
                 'submenu' => array(
                     array(
                         'label' => 'Site Ranks',
@@ -165,6 +173,7 @@ class SiteMenu
             ),
             array(
                 'label' => 'Setting',
+                'icon' => 'glyphicon glyphicon-cog',
                 'submenu' => array(
                     array(
                         'label' => 'Site Enum',
@@ -210,6 +219,7 @@ class SiteMenu
         
         foreach($menus as $menu){
             $menu_label    = $menu['label'];
+            $menu_icon    = $menu['icon'];
             $menu_perms    = array_key_value_or('perms', $menu);
             $menu_show     = $menu_perms ? $this->CI->can_i($menu_perms) : false;
             $menu_sub      = array_key_value_or('submenu', $menu);
@@ -254,7 +264,8 @@ class SiteMenu
             
             $admin_menu_item = array(
                 'label' => $menu_label,
-                'active' => $menu_active
+                'active' => $menu_active,
+                'icon' => $menu_icon
             );
             if($menu_target){
                 $admin_menu_item['target'] = $menu_target;

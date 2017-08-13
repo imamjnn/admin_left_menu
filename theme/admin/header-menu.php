@@ -24,8 +24,9 @@
             }
             $tx.= '>';
             
+            $tx.= '<span class="'.$header_menu['icon'].'"></span> ';
             $tx.= _l($header_menu['label']);
-            $tx.= $header_submenu ? ' <span class="caret"></span>' : '';
+            $tx.= $header_submenu ? ' <span class="pull-right"><span class="caret"></span></span>' : '';
             $tx.= '</a>';
             
             if($header_submenu){
