@@ -57,6 +57,8 @@ class MY_Controller extends CI_Controller
                         $this->user->perms[] = 'logged_in';
                     }
                 }
+                $this->load->library('ObjectFormatter', '', 'formatter');
+                $user = $this->formatter->user($user);
             }
         }
         

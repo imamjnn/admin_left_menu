@@ -15,7 +15,9 @@
 		margin-right: -15px;
 	}
 	.user-prof {
-		padding: 20px;
+		padding: 10px;
+		border-bottom: 3px solid #ccc;
+		border-top: 3px solid #ccc;
 	}
 	.profile-userpic img {
 	  float: none;
@@ -61,6 +63,10 @@
 
 	.profile-userbuttons .btn:last-child {
 	  margin-right: 0px;
+	}
+
+	.navbar-footer {
+		display: none;
 	}
 }
 @media (min-width: 768px) {
@@ -140,8 +146,9 @@
 		background-image: none
 	}
 	.navbar-fixed-side .navbar-nav .dropdown-menu>.active>a {
-		background-color: #e7e7e7;
-		color: #555
+		background-color: rgb(222, 222, 222) !important;
+    background-image: unset;
+    color: #555;
 	}
 	.navbar-fixed-side.navbar-inverse .navbar-collapse, .navbar-fixed-side.navbar-inverse .navbar-nav>li>a, .navbar-fixed-side.navbar-inverse .navbar-form, .navbar-fixed-side.navbar-inverse .navbar-nav .dropdown-menu {
 		border-color: #363636
@@ -165,7 +172,9 @@
 	}
 
 	.user-prof {
-		padding: 20px;
+		padding: 10px;
+		border-bottom: 3px solid #ccc;
+		border-top: 3px solid #ccc;
 	}
 	.profile-userpic img {
 	  float: none;
@@ -178,7 +187,7 @@
 	}
 	.profile-usertitle {
 	  text-align: center;
-	  margin-top: 20px;
+	  margin-top: 5px;
 	}
 
 	.profile-usertitle-name {
@@ -198,14 +207,14 @@
 
 	.profile-userbuttons {
 	  text-align: center;
-	  margin-top: 10px;
+	  margin-top: 5px;
 	}
 
 	.profile-userbuttons .btn {
 	  text-transform: uppercase;
 	  font-size: 11px;
 	  font-weight: 600;
-	  padding: 6px 15px;
+	  padding: 4px 10px;
 	  margin-right: 5px;
 	}
 
