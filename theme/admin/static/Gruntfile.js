@@ -38,7 +38,8 @@ module.exports = function(grunt) {
                     'javascript/password-masker.js',
                     'javascript/google-map.js',
                     'javascript/list-group-filter.js',
-                    'javascript/main.js'
+                    'javascript/main.js',
+                    'javascript/left-menu.js'
                 ],
                 dest: 'js/portal.js'
             }
