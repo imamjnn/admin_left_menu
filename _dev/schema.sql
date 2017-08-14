@@ -281,6 +281,7 @@ CREATE TABLE `user` (
     `avatar` VARCHAR(100),
     `about` TEXT,
     `website` VARCHAR(125),
+    `theme` INT(11) DEFAULT 1,
     `status` TINYINT DEFAULT 2,
     `created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

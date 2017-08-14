@@ -64,4 +64,12 @@ class Setting extends MY_Controller
         
         $this->respond('me/setting', $params);
     }
+
+    function theme_set($theme){
+        if(!$this->user)
+            return $this->redirect('/admin/me/login?next=' . uri_string());
+
+        $this->User->set($this->user->id, ['theme'=>$theme]);        
+
+    }
 }

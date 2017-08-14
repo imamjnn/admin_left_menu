@@ -27,7 +27,7 @@
                             <?php foreach($params as $index => $param): ?>
                                 <tr>
                                     <td><?= ($index + 1) ?>.</td>
-                                    <td><?= $param->name ?></td>
+                                    <td><b><?= $param->name ?></b></td>
                                     <td><?= $param->value ?></td>
                                     <td>
                                         <?php if(ci()->can_i('update-site_param')): ?>

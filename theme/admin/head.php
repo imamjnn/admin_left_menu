@@ -175,6 +175,7 @@
 		padding: 10px;
 		border-bottom: 3px solid #ccc;
 		border-top: 3px solid #ccc;
+		background-color: currentColor;
 	}
 	.profile-userpic img {
 	  float: none;
@@ -191,7 +192,7 @@
 	}
 
 	.profile-usertitle-name {
-	  color: #5a7391;
+	  color: #9E9E9E;
 	  font-size: 16px;
 	  font-weight: 600;
 	  margin-bottom: 7px;
@@ -221,5 +222,18 @@
 	.profile-userbuttons .btn:last-child {
 	  margin-right: 0px;
 	}
+
+	.txt-brand {
+		font-family: sans-serif;
+	    font-weight: bold;
+	}
+
+	.choose-theme{
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.btn-default.btn-off.active{background-color: #252525;color: white;}
 }
 </style>
